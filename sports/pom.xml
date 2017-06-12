@@ -8,4 +8,40 @@
   	<module>sports-entity</module>
   	<module>sports-commons</module>
   </modules>
+  
+  <!-- spring jar 配置 -->
+  <properties>
+  	<spring.version>4.3.8.RELEASE</spring.version>
+  	<encode>utf-8</encode>
+  </properties>
+  <dependencies>
+		  <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-core</artifactId>
+		    <version>${spring.version}</version>
+		 </dependency>
+		 <dependency>
+		 	<groupId>org.springframework</groupId>
+    		<artifactId>spring-beans</artifactId>
+    		 <version>${spring.version}</version>
+		 </dependency>
+		 
+		 <!-- redis jar -->
+		 <dependency>
+		    <groupId>redis.clients</groupId>
+		    <artifactId>jedis</artifactId>
+		    <version>2.9.0</version>
+		</dependency>
+		 <dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-redis</artifactId>
+		    <version>1.8.2.RELEASE</version>
+		</dependency>
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>4.10</version>
+		    <scope>test</scope>
+		</dependency>
+  </dependencies>
 </project>
